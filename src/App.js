@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Users from "./components/Users";
+
+/** FETCH:
+ * Herhangi bir veri kaynağından veri çekip gösterme
+ * Bu işlem için jsonplaceholde.typicode.com sitesinden fake bir api kullanacağız.
+ * Bu kısımda user end-pointinden kullanıcıları döneceğiz.
+ *
+ */
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Users />
     </div>
   );
 }
